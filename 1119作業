@@ -1,0 +1,52 @@
+1.
+
+import math
+
+r = float(input("請輸入圓的半徑: "))
+
+if r >= 0:  
+    area = math.pi * r 
+    circumference = 2 * math.pi * r
+    print(f"面積: {area:.2f}")
+    print(f"周長: {circumference:.2f}")
+else:
+    print("半徑必須大於或等於零。")
+
+2.
+
+import random
+
+x = random.randint(1, 50)
+y = random.randint(1, 50)
+
+print(x,y)
+
+z = float(input("請輸入這兩個數字的和: "))
+
+a = x + y
+
+if z == a:
+    print("right")
+else:
+    print("error")
+
+3.
+
+x = 0
+y = 0
+a = float(input("請輸入第一個數字 "))
+b = float(input("請輸入第二個數字 "))
+c = float(input("請輸入第三個數字 "))
+d = float(input("請輸入第四個數字 "))
+e = float(input("請輸入第五個數字 "))
+f = float(input("請輸入第六個數字 "))
+i = float(input("請輸入第七個數字 "))
+j = float(input("請輸入第八個數字 "))
+k = float(input("請輸入第九個數字 "))
+l = float(input("請輸入第十個數字 "))
+for number in [a, b, c, d, e, f, i, j, k, l]:
+    if number < 0:
+        x += 1 
+    elif number > 0:
+        y += 1 
+print(f"正數的個數: {y},負數的個數: {x}")
