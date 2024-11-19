@@ -1,4 +1,5 @@
 1.
+
 year = int(input("請輸入年份："))
 month = int(input("請輸入月份："))
 
@@ -13,29 +14,41 @@ elif month == 4 or month == 6 or month == 9 or month == 11:
     days = 30
 elif month == 2:
     if is_leap_year(year):
-        days = 29  
+        days = 29
     else:
-        days = 28  
+        days = 28
 else:
     days = "錯誤"
 
+if days == "錯誤":
+    print("輸入的月份不正確，請重新輸入正確的月份。")
+else:
+    print(f"{year} 年 {month} 月有 {days} 天。")
+
+
 print(f"{year}年{month}月有{days}天")
 
+
 2.
+
 score = int(input("請輸入成績："))
 
 if 90 <= score <= 100:
     print("A等")
-elif 80 <= score < 90:
+if 80 <= score < 90:
     print("B等")
-elif 70 <= score < 80:
+if 70 <= score < 80:
     print("C等")
-elif 60 <= score < 70:
+if 60 <= score < 70:
     print("D等")
-else:
+if 0 <=score < 60:
     print("E等")
+else:
+    print("錯誤")
+
 
 3.
+
 myage = int(input("請輸入你的年齡："))
 friendage = int(input("請輸入你朋友的年齡："))
 
