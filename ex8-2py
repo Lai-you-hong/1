@@ -7,7 +7,7 @@ for x in thist:
 
 print(len(thist))
 
-for x in range(0,len(thist)):
+for x in range(0,len(thist)): 
     print(x,"  ")
     print(thist[x])
  
