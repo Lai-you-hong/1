@@ -1,4 +1,4 @@
-total = 0
+total = 0 
 
 for i in range(1, 11):
     num = float(input(f"請輸入第 {i} 個數字: "))
