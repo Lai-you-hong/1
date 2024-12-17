@@ -1,4 +1,4 @@
-1.
+1. 
 
 year = int(input("請輸入年份："))
 month = int(input("請輸入月份："))
